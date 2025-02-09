@@ -4,19 +4,19 @@ number2 = 1
 mysum = 0
 end_num = 17
 
-    for i in range(1, end_num):
-        number1 += number2 
-        number2 += number1 
+for i in range(1, end_num):
+    number1 += number2 
+    number2 += number1 
         
-        if number1 % 2 == 0:
-            mysum += number1
-        if number2 % 2 == 0:
-            mysum += number2
+    if number1 % 2 == 0:
+        mysum += number1
+    if number2 % 2 == 0:
+        mysum += number2
             
-        print("num:", number1) 
-        print("num:", number2)
+    print("num:", number1) 
+    print("num:", number2)
 
-    print("Total Sum of Even Numbers:", mysum)
+print("Total Sum of Even Numbers:", mysum)
 
 # Example Output:
 # num: 1
