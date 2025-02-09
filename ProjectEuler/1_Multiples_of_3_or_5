@@ -7,5 +7,5 @@ for i in range(number):
 
 print(mysum)
 
-#Example Output
+# Example Output
 # 233168
