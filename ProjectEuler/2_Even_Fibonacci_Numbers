@@ -1,0 +1,54 @@
+# Fibonacci Numbers (number1 & 2) should not exceed 4_000_000. 17 iterations are required(end_num)
+number1 = 0
+number2 = 1
+mysum = 0
+end_num = 17
+
+    for i in range(1, end_num):
+        number1 += number2 
+        number2 += number1 
+        
+        if number1 % 2 == 0:
+            mysum += number1
+        if number2 % 2 == 0:
+            mysum += number2
+            
+        print("num:", number1) 
+        print("num:", number2)
+
+    print("Total Sum of Even Numbers:", mysum)
+
+# Example Output:
+# num: 1
+# num: 2
+# num: 3
+# num: 5
+# num: 8
+# num: 13
+# num: 21
+# num: 34
+# num: 55
+# num: 89
+# num: 144
+# num: 233
+# num: 377
+# num: 610
+# num: 987
+# num: 1597
+# num: 2584
+# num: 4181
+# num: 6765
+# num: 10946
+# num: 17711
+# num: 28657
+# num: 46368
+# num: 75025
+# num: 121393
+# num: 196418
+# num: 317811
+# num: 514229
+# num: 832040
+# num: 1346269
+# num: 2178309
+# num: 3524578
+# Total Sum of Even Numbers: 4613732
