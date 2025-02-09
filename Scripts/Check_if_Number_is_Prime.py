@@ -14,3 +14,7 @@ def is_prime(number):
     else:
         # If input number is 1 or less we return False because it's not Prime
         return False
+
+# Example
+# print(is_prime(10))
+# False
