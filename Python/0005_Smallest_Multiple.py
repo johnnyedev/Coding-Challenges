@@ -1,5 +1,12 @@
-# Checks for the smallest multiple of 1-20
+# Project Euler
+# Problem 5: Smallest Multiple
+# https://projecteuler.net/problem=5
 
+# 2520 is the smallest number that can be divided by each of the numbers from 1 to 10 without any remainder.
+# What is the smallest positive number that is evenly divisible by all of the numbers from 1 to 20?
+ 
+
+# Checks for the smallest multiple of 1-20
 def smallest_multiple():
     large_num = 1_000_000_000_000_000_000_000_000_000_000_000
     for num in range(1, large_num):
@@ -11,3 +18,6 @@ def smallest_multiple():
     return
 
 smallest_multiple()
+
+########## Example Output ##########
+# 232792560 passed checks
