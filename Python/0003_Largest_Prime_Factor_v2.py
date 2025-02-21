@@ -1,3 +1,12 @@
+# Project Euler
+# Problem 3: Largest Prime Factor
+# https://projecteuler.net/problem=3
+
+# The prime factors of 13195 are 5, 7, 13, and 29.
+# What is the largest prime factor of the number 600851475143 ?
+
+
+
 # V2 This one reduces workload as once it loops to a point where a new factor = the previous factors result, we know there are no more factors. See Example Output below
 def is_prime(number):
     if number > 1:
@@ -58,7 +67,7 @@ print(f"Prime Factors: {prime_factors}")
 print(f"Largest Prime Factor: {prime_factors[-1]}")
 
 
-############ Example Output ############
+########## Example Output ##########
 # Looking for factors of: 13195
 # --------------------------------------------
 # Factor Found: 13195 / 1 = 13195.0
