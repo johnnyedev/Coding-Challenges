@@ -22,3 +22,20 @@
 # -104 <= nums[i] <= 104
 # nums contains distinct values sorted in ascending order.
 # -104 <= target <= 104
+
+class Solution:
+    def searchInsert(self, nums: List[int], target: int) -> int:
+
+        if target in nums:
+            result = nums.index(target)
+            return result
+        else:
+            for num in nums:
+                #print(num)
+                if nums[-1] < target:
+                    result = nums.index(nums[-1]) + 1
+                    return result
+                if num > target:
+                    result = nums.index(num)
+                    return result
+
