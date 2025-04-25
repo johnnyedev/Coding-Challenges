@@ -10,6 +10,5 @@ class Solution:
         for num in list_copy:
             if num == val:
                 nums.remove(num)
- #       print(nums)
- #       print(list_copy)
-        return len(nums)
+        #print(nums)
+        #print(list_copy)
