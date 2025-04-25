@@ -6,10 +6,10 @@
 class Solution:
     def removeElement(self, nums: List[int], val: int) -> int:
 
-        result_list = nums.copy()
-        for num in result_list:
+        list_copy = nums.copy()
+        for num in list_copy:
             if num == val:
                 nums.remove(num)
  #       print(nums)
- #       print(result_list)
+ #       print(list_copy)
         return len(nums)
